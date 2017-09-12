@@ -9241,6 +9241,8 @@ if text:match("^source$") or text:match("^اصدار$") or text:match("^الاص
 اهلا بكم في بوت TP
 
 DEV : @AHMED1998A
+				
+				DEV : @U_U_I
 
 channel : @MASTER_OF_ART
 
