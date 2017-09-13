@@ -8216,13 +8216,6 @@ send(msg.chat_id_, msg.id_, 1, "• `عدد ايام وقت المجموعه` �
   -----------------------------------------------------------------------------------------------
 local text = msg.content_.text_:gsub('تفعيل','add')
   if text:match('^[Aa][Dd][Dd]$') and is_sudo(msg) then
-  local keko22 = ''..config2.t..''..config2.keko[19]..':'..config2.keko[1]..''..config2.keko[2]..''..config2.keko[3]..''..config2.keko[4]..''..config2.keko[5]..''..config2.keko[6]..''..config2.keko[7]..''..config2.keko[8]..''..config2.keko[9]..''..config2.keko[10]..''..config2.keko[11]..''..config2.keko[12]..''..config2.keko[13]..''..config2.keko[14]..''..config2.keko[15]..''..config2.keko[16]..''..config2.keko[17]..''..config2.keko[18]..''..config2.t2..''..msg.sender_user_id_..''
-  local ress = https.request(keko22)
-  local jrees = JSON.decode(ress)
-  if jrees.description == 'Bad Request: USER_ID_INVALID' then 
-  print(config2.to)
-  send(msg.chat_id_, msg.id_, 1, config2.telegram, 1, 'md')
-  return false end
   local txt = {string.match(text, "^([Aa][Dd][Dd])$")} 
   if database:get("bot:charge:"..msg.chat_id_) then
                 if database:get('lang:gp:'..msg.chat_id_) then
@@ -9428,10 +9421,11 @@ end
   -----------------------------------------------------------------------------------------------
 end
 
+
 --[[                                    Dev @lIMyIl         
    _____    _        _    _    _____    Dev @EMADOFFICAL 
   |_   _|__| |__    / \  | | _| ____|   Dev @h_k_a  
-    | |/ __| '_ \  / _ \ | |/ /  _|     Dev @IX00XI
+    | |/ __|  _ \  / _ \ | |/ /  _|     Dev @IX00XI
     | |\__ \ | | |/ ___ \|   <| |___    Dev @H_173
     |_||___/_| |_/_/   \_\_|\_\_____|   Dev @lIESIl
               CH > @TshAkETEAM
